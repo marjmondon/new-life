@@ -1,3 +1,20 @@
 <div class="form-inputs">
-  <%= f.input :title %>
+
+  <%= f.input :title,
+                label: "Title",
+                label_html: {class: ""},
+                placeholder: "Title" %>
+  <%= f.input :description,
+                :as => :text,
+                label: "Describe your life",
+                label_html: {class: ""},
+                placeholder: "Description" %>
+  <%= f.input :price,
+                label: "Price",
+                label_html: {class: ""},
+                placeholder: "Price" %>
+</div>
+
+<div class="">
+  <%= f.button :submit, "Create a Life" %>
 </div>
