@@ -1,4 +1,6 @@
 class LivesController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def index
     @lives = policy_scope(Life)
   end
