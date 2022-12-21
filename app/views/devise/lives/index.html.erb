@@ -1,0 +1,2 @@
+<%# Hide the link for unauthorized users: %>
+<%= link_to "New life", new_life_path if policy(Life).new? %>

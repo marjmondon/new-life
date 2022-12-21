@@ -1,0 +1,5 @@
+<% if policy(@life).edit? %>
+  <%= link_to "Edit this life", edit_life_path(@life) %> |
+<% end %>
+<!-- [...] -->
+<%= button_to "Destroy this life", @life, method: :delete if policy(@life).destroy? %>
